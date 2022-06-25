@@ -1,7 +1,10 @@
 import React from 'react';
+import FirstComponent from './FirstComponent';
 
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('root');
-const root = createRoot(container);
-//make an "App" Component, render that instead of Hello world
-root.render(<p>Hello world!</p>);
+const App = () => {
+    return <FirstComponent />;
+}
+
+export default App;
+
+// I guess I have to change div in index.html root too something?

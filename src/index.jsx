@@ -1,10 +1,9 @@
 import React from 'react';
-import FirstComponent from './FirstComponent';
 
-const App = () => {
-    return <FirstComponent />;
-}
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-export default App;
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
 
-// I guess I have to change div in index.html root too something?

@@ -1,5 +1,11 @@
-const App = () => {
-  return <div>Hello App</div>;
-};
+import Header from "./Header"
 
-export default App;
+const App = () => {
+  return( 
+  <div className="App">
+    <Header />
+  </div>
+  )
+}
+
+export default App

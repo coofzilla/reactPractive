@@ -1,9 +1,7 @@
-import React from 'react';
-
+//Why did I remove the import for React???
 import { createRoot } from 'react-dom/client';
 import App from './App';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(<App />);
-

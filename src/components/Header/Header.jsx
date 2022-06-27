@@ -1,12 +1,14 @@
-//HW
-//Make Header component
-//Should display text "Today"
-//Use Arrow Function
+//go here to learn more about passing props
+//https://beta.reactjs.org/learn/passing-props-to-a-component
 
-const Header = () => {
-    return(
-        <div><h1>Today</h1></div>
-    );
-}
+//can "destructure" what we want from props
+const Header = ({ header, fontSize }) => {
+  return <div style={{ fontSize }}>{header}</div>;
+};
+export default Header;
 
-export default Header
+//this functions the same as above, but then you have to reference props.blah
+//thats why we destructured it above to clean it up
+// const Header = (props) => {
+//   return <div>{props.header}</div>;
+// };
